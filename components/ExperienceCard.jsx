@@ -39,6 +39,7 @@ const ExperienceCard = ({ data }) => {
 								src={data.companylogo}
 								width={"100px"}
 								height={"100px"}
+								className="image-75"
 								alt={data.companylogo}
 							/>
 						</div>
@@ -49,8 +50,8 @@ const ExperienceCard = ({ data }) => {
 							<ul>
 								{data.descBullets
 									? data.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
-									  })
+										return <li key={desc}>{desc}</li>;
+									})
 									: null}
 							</ul>
 						</CardText>
