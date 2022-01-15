@@ -5,7 +5,7 @@ export const greetings = {
 	title: "Hi all, I'm Aditya",
 	description:
 		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with Java / Spring Boot / JavaScript / ReactJS / Angular / Nodejs / Python / Django and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
-	resumeLink: "https://www.adityamhatre.com/resume.pdf",
+	resumeLink: "/resume.pdf",
 };
 
 export const openSource = {
