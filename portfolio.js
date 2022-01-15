@@ -1,25 +1,28 @@
 import emoji from "react-easy-emoji";
 
 export const greetings = {
-	name: "Hanzla Tauqeer",
-	title: "Hi all, I'm Hanzla",
+	name: "Aditya Mhatre",
+	title: "Hi all, I'm Aditya",
 	description:
-		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
-	resumeLink: "https://cv.hanzla.ga",
+		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with Java / Spring Boot / JavaScript / ReactJS / Angular / Nodejs / Python / Django and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
+	resumeLink: "https://www.adityamhatre.com/resume.pdf",
 };
 
 export const openSource = {
-	githubUserName: "1hanzla100",
+	githubUserName: "adityamhatre",
 };
 
-export const contact = {};
+export const contact = {
+	location: 'Dallas, TX',
+};
 
 export const socialLinks = {
-	facebook: "https://www.facebook.com/1hanzla100",
-	instagram: "https://www.instagram.com/1hanzla100",
-	twitter: "https://twitter.com/1hanzla100",
-	github: "https://github.com/1hanzla100",
-	linkedin: "https://www.linkedin.com/in/hanzla-tauqeer-0869281ba/",
+	facebook: "https://www.facebook.com/aditya.r.mhatre",
+	instagram: "https://www.instagram.com/adityamhatre",
+	twitter: "https://twitter.com/aditya_r_mhatre",
+	github: "https://github.com/adityamhatre",
+	linkedin: "https://www.linkedin.com/in/aditya-mhatre",
+	email: "mailto:aditya.r.mhatre@gmail.com"
 };
 
 export const skillsSection = {
@@ -28,10 +31,13 @@ export const skillsSection = {
 		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
 	skills: [
 		emoji(
+			"⚡ Develop highly efficient backend applications for any business domain"
+		),
+		emoji(
 			"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
 		),
 		emoji(
-			"⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"
+			"⚡ Develop cross platform apps using Flutter"
 		),
 		emoji(
 			"⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
@@ -39,6 +45,30 @@ export const skillsSection = {
 	],
 
 	softwareSkills: [
+		{
+			skillName: 'Java',
+			fontAwesomeClassname: 'vscode-icons:file-type-java'
+		},
+		{
+			skillName: "JavaScript",
+			fontAwesomeClassname: "logos:javascript",
+		},
+		{
+			skillName: "TypeScript",
+			fontAwesomeClassname: "logos:typescript-icon",
+		},
+		{
+			skillName: "Spring-Boot",
+			fontAwesomeClassname: "bx:bxl-spring-boot",
+		},
+		{
+			skillName: "ReactJS",
+			fontAwesomeClassname: "vscode-icons:file-type-reactjs",
+		},
+		{
+			skillName: "Angular",
+			fontAwesomeClassname: "vscode-icons:file-type-angular",
+		},
 		{
 			skillName: "html-5",
 			fontAwesomeClassname: "vscode-icons:file-type-html",
@@ -52,18 +82,6 @@ export const skillsSection = {
 			fontAwesomeClassname: "logos:sass",
 		},
 		{
-			skillName: "JavaScript",
-			fontAwesomeClassname: "logos:javascript",
-		},
-		{
-			skillName: "TypeScript",
-			fontAwesomeClassname: "logos:typescript-icon",
-		},
-		{
-			skillName: "reactjs",
-			fontAwesomeClassname: "vscode-icons:file-type-reactjs",
-		},
-		{
 			skillName: "nodejs",
 			fontAwesomeClassname: "logos:nodejs-icon",
 		},
@@ -72,8 +90,8 @@ export const skillsSection = {
 			fontAwesomeClassname: "logos:flutter",
 		},
 		{
-			skillName: "swift",
-			fontAwesomeClassname: "vscode-icons:file-type-swift",
+			skillName: "android",
+			fontAwesomeClassname: "logos:android",
 		},
 		{
 			skillName: "npm",
@@ -82,14 +100,6 @@ export const skillsSection = {
 		{
 			skillName: "sql-database",
 			fontAwesomeClassname: "vscode-icons:file-type-sql",
-		},
-		{
-			skillName: "mongoDB",
-			fontAwesomeClassname: "vscode-icons:file-type-mongo",
-		},
-		{
-			skillName: "aws",
-			fontAwesomeClassname: "logos:aws",
 		},
 		{
 			skillName: "firebase",
@@ -112,76 +122,64 @@ export const skillsSection = {
 
 export const SkillBars = [
 	{
-		Stack: "Frontend/Design", //Insert stack or technology you have experience in
-		progressPercentage: "90", //Insert relative proficiency in percentage
+		Stack: "Frontend", //Insert stack or technology you have experience in
+		progressPercentage: "70", //Insert relative proficiency in percentage
 	},
 	{
 		Stack: "Backend",
-		progressPercentage: "70",
+		progressPercentage: "90",
 	},
 	{
 		Stack: "Programming",
-		progressPercentage: "60",
+		progressPercentage: "90",
 	},
 ];
 
 export const educationInfo = [
 	{
-		schoolName: "Harvard University",
+		schoolName: "The University of Texas at Arlington",
 		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
+		duration: "August 2016 - May 2018",
+		desc: "",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"3.67 GPA",
+			"Majored in AI, Software Engineering, and Databases",
 		],
 	},
 	{
-		schoolName: "Harvard",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
+		schoolName: "University of Mumbai",
+		subHeader: "Bachelor of Engineering in Computer Engineering",
+		duration: "August 2012 - May 2016",
+		desc: "",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
-	{
-		schoolName: "Stanford University",
-		subHeader: "Bachelor of Science in Computer Science",
-		duration: "September 2013 - April 2017",
-		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-		descBullets: [
-			"Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
+			"7.67 GPA",
+			"Majored in Computer Engineering and developed website for student council",
 		],
 	},
 ];
 
 export const experience = [
 	{
-		role: "Software Engineer",
-		company: "Google",
-		companylogo: "/img/icons/common/google.svg",
-		date: "June 2018 – Present",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		role: "Senior Software Engineer",
+		company: "Zimperium",
+		companylogo: "/img/zimperium.png",
+		date: "June 2018 – August 2021",
+		desc: "First job out of university. Started as junior developer and worked my way to senior engineer.",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"Learned and implemented new technologies such as ReactJS, AngularJS, Springboot, AWS, Docker, and more.",
+			"Worked on a team of 5 developers to build a microservice architectured web application for the company.",
 		],
 	},
 	{
-		role: "Front-End Developer",
-		company: "Github",
-		companylogo: "/img/icons/common/github.svg",
-		date: "May 2017 – May 2018",
-		desc: "Lorem ipsum dolor sit amet, consefdctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
-	{
-		role: "Software Engineer Intern",
-		company: "Airbnb",
-		companylogo: "/img/icons/common/airbnbLogo.png",
-		date: "Jan 2015 – Sep 2015",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		role: "Senior Front-End Developer",
+		company: "CBRE",
+		companylogo: "/img/cbre.svg",
+		date: "August 2021 – Present",
+		desc: "Currently working as a Senior Front-End Developer at CBRE using the latest technologies.",
+		descBullets: [
+			"Undertaking the development of a new application for the company.",
+			"Working on a team of 5 developers to migrate a monolith architectured web application to a modern microservice and micro UI architectured application.",
+		],
 	},
 ];
 
@@ -194,25 +192,25 @@ export const projects = [
 	{
 		name: "lorem ipsum",
 		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		github: "https://github.com/1hanzla100",
+		github: "https://github.com/1Aditya100",
 	},
 	{
 		name: "lorem ipsum",
 		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		github: "https://github.com/1hanzla100",
+		github: "https://github.com/1Aditya100",
 		link: "https://example.com",
 	},
 ];
 
 export const feedbacks = [
-	{
+	/*{
 		name: "Hassan Mehmood",
 		feedback:
-			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Hanzla tauqeer has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose hanzla web developer services for u.",
+			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Aditya Mhatre has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose Aditya web developer services for u.",
 	},
 	{
 		name: "Maheen Altaf",
 		feedback:
 			"the website is very nice, everything was perfectly made as i need. it just loads in moments, without giving u the chance to wait. the quality is also very amazing. i am using it without any problem. great job",
-	},
+	},*/
 ];
