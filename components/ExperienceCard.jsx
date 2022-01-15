@@ -36,6 +36,7 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px" }}
 						>
 							<Image
+								unoptimized={true}
 								src={data.companylogo}
 								width={"100px"}
 								height={"100px"}

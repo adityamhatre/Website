@@ -22,7 +22,8 @@ export const socialLinks = {
 	twitter: "https://twitter.com/aditya_r_mhatre",
 	github: "https://github.com/adityamhatre",
 	linkedin: "https://www.linkedin.com/in/aditya-mhatre",
-	email: "mailto:aditya.r.mhatre@gmail.com"
+	email: "mailto:aditya.r.mhatre@gmail.com",
+	medium: "https://medium.com/@aditya.r.mhatre"
 };
 
 export const skillsSection = {
@@ -171,11 +172,11 @@ export const experience = [
 		],
 	},
 	{
-		role: "Senior Front-End Developer",
+		role: "Senior Full Stack Developer",
 		company: "CBRE",
 		companylogo: "/img/cbre.svg",
 		date: "August 2021 – Present",
-		desc: "Currently working as a Senior Front-End Developer at CBRE using the latest technologies.",
+		desc: "Currently working as a Senior Full Stack Developer at CBRE using the latest technologies.",
 		descBullets: [
 			"Undertaking the development of a new application for the company.",
 			"Working on a team of 5 developers to migrate a monolith architectured web application to a modern microservice and micro UI architectured application.",
