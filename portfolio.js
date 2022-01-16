@@ -161,15 +161,16 @@ export const educationInfo = [
 
 export const experience = [
 	{
-		role: "Senior Full Stack Developer",
+		role: "Senior Full Stack Engineer",
 		company: "CBRE",
 		companylogo: "/img/cbre.svg",
 		date: "August 2021 – Present",
-		desc: "Currently working as a Senior Full Stack Developer at CBRE using the latest technologies.",
+		desc: "Currently working as a Senior Full Stack Engineer at CBRE using the latest technologies.",
 		descBullets: [
 			"Undertaking the development of a new application for the company.",
 			"Working on a team of 5 developers to migrate a monolith architectured web application to a modern microservice and micro UI architectured application.",
 		],
+		companyLink: "https://www.cbre.com/"
 	},
 	{
 		role: "Senior Software Engineer",
@@ -181,6 +182,7 @@ export const experience = [
 			"Learned and implemented new technologies such as ReactJS, AngularJS, Springboot, AWS, Docker, and more.",
 			"Worked on a team of 5 developers to build a microservice architectured web application for the company.",
 		],
+		companyLink: "https://www.zimperium.com/"
 	},
 	{
 		role: "Web Developer",
@@ -190,7 +192,9 @@ export const experience = [
 		desc: "Provisioned workflow for students to upload research papers for a lab journal online system",
 		descBullets: [
 			"Developed in a ReactJs frontend and NodeJS based backend app deployed on GCP",
-			"Learned and implemented new technologies such as ReactJS, AngularJS, Springboot, GCP, Docker and more."],
+			"Learned and implemented new technologies such as ReactJS, AngularJS, Springboot, GCP, Docker and more."
+		],
+		companyLink: "https://www.uta.edu/"
 	}
 ];
 

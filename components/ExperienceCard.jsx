@@ -16,6 +16,8 @@ import { Fade } from "react-reveal";
 import Image from "next/image";
 
 const ExperienceCard = ({ data }) => {
+	const navigateToCompany = () => window.open(data.companyLink, "_blank");
+
 	return (
 		<Col lg="4">
 			<Fade left duration={1000} distance="40px">
@@ -26,7 +28,7 @@ const ExperienceCard = ({ data }) => {
 					<Color src={data.companylogo} format="hex">
 						{(color) => (
 							<CardHeader style={{ background: color.data }}>
-								<h5 className="text-white">{data.company}</h5>
+								<h5 onClick={navigateToCompany} className="text-white pointer" >{data.company}</h5>
 							</CardHeader>
 						)}
 					</Color>
@@ -36,11 +38,12 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px" }}
 						>
 							<Image
+								onClick={navigateToCompany}
 								unoptimized={true}
 								src={data.companylogo}
 								width={"100px"}
 								height={"100px"}
-								className="image-75"
+								className="image-75 pointer"
 								alt={data.companylogo}
 							/>
 						</div>

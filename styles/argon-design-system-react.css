@@ -25395,3 +25395,7 @@ td.rdtYear:hover {
 	min-height: 75% !important;
 	max-height: 75% !important;
 }
+
+.pointer {
+	cursor: pointer;
+}
