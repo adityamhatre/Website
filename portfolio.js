@@ -203,37 +203,43 @@ export const projects = [
 		name: "Solar System",
 		desc: "A solar system artistic animation using p5.js",
 		link: "https://adityamhatre.github.io/solar-system-colored/",
-		github: "https://github.com/adityamhatre/solar-system-colored"
+		github: "https://github.com/adityamhatre/solar-system-colored",
+		youtube: "https://www.youtube.com/watch?v=Jqbyhhj9x3I",
 	},
 	{
 		name: "Cross platform video calling",
 		desc: "A video calling app that can be used on Android and iOS",
 		link: "https://medium.com/@aditya.r.mhatre/cross-platform-video-calling-c1191a2b2cd8",
-		github: "https://github.com/adityamhatre/flutter-video-call"
+		github: "https://github.com/adityamhatre/flutter-video-call",
+		youtube: "https://www.youtube.com/watch?v=0XqvL4EnoPM",
 	},
 	{
 		name: "Magic Mirror",
 		desc: "A mirror that displays time and weather info on it.",
 		link: "https://medium.com/@aditya.r.mhatre/magic-mirror-e0f8b2da3a0f",
 		github: "https://github.com/adityamhatre/Smart-Mirror",
+		youtube: "https://www.youtube.com/watch?v=4lZw1ye6UKI",
 	},
 	{
 		name: "Self-driving car",
 		desc: "A self-driving car that uses genetic algorithm to train itself.",
 		github: "https://github.com/adityamhatre/self-drving-car-genetic",
 		link: "https://medium.com/@aditya.r.mhatre/evolving-self-driving-cars-243b973dc984",
+		youtube: "https://www.youtube.com/watch?v=ASY8dOwJcbk",
 	},
 	{
 		name: "Smart Door Lock",
 		desc: "A smart door lock that can be used to lock and unlock the door.",
 		link: "https://medium.com/@aditya.r.mhatre/diy-smart-doorlock-8f1180074b6d",
-		github: "https://github.com/adityamhatre/KnobApi"
+		github: "https://github.com/adityamhatre/KnobApi",
+		youtube: "https://www.youtube.com/watch?v=1QKkKmiBLes",
 	},
 	{
 		name: "Video game car controller",
 		desc: "A car controller that can be used to control the car in a game using camera.",
 		link: "https://medium.com/@aditya.r.mhatre/car-controller-for-games-using-opencv-1ba821d5fe4b",
-		github: "https://github.com/adityamhatre/GameCarControl-CV"
+		github: "https://github.com/adityamhatre/GameCarControl-CV",
+		youtube: "https://www.youtube.com/watch?v=TXieQvzbTD8",
 	}
 ];
 

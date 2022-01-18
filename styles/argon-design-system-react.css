@@ -25399,3 +25399,15 @@ td.rdtYear:hover {
 .pointer {
 	cursor: pointer;
 }
+
+.btn-youtube {
+	background-color: #e52d27;
+	color: #fff;
+	border-color: #e52d27;
+}
+
+.btn-youtube:hover {
+	background-color: #c52d27;
+	color: #fff;
+	border-color: #c52d27;
+}

@@ -28,6 +28,20 @@ const ProjectsCard = ({ data }) => {
 										</span>
 									</Button>
 								) : null}
+								{data.youtube ? (
+									<Button
+										className="btn-youtube"
+										color="github"
+										href={data.youtube}
+										target="_blank"
+										rel="noopener"
+										aria-label="YouTube"
+									>
+										<span className="btn-inner--icon">
+											<i className="fa fa-youtube" />
+										</span>
+									</Button>
+								) : null}
 								{data.link ? (
 									<Button
 										className="btn-icon"
@@ -40,7 +54,7 @@ const ProjectsCard = ({ data }) => {
 											<i className="fa fa-arrow-right mr-2" />
 										</span>
 										<span className="nav-link-inner--text ml-1">
-											Demo
+											Read more
 										</span>
 									</Button>
 								) : null}
