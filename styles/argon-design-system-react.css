@@ -25411,3 +25411,21 @@ td.rdtYear:hover {
 	color: #fff;
 	border-color: #c52d27;
 }
+
+.btn-store {
+	background-color: #4285F4;
+	color: #fff;
+	border-color: #4285F4;
+}
+
+.btn-store:hover {
+	background-color: #4285F4;
+	color: #fff;
+	border-color: #4285F4;
+}
+
+.project-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 1rem;
+}

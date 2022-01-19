@@ -200,6 +200,13 @@ export const experience = [
 
 export const projects = [
 	{
+		name: "Auto-close tab timer",
+		desc: "Automaticly closes the tab after a certain time",
+		link: "https://medium.com/@aditya.r.mhatre/chrome-tab-auto-close-timer-86aa3ea101c9",
+		github: "https://github.com/adityamhatre/tab-close-timer",
+		storeLink: "https://chrome.google.com/webstore/detail/tab-close-timer/fjcngjmpebbfdjpndmlbfoldgiinpfcf/related?hl=en&authuser=0"
+	},
+	{
 		name: "Solar System",
 		desc: "A solar system artistic animation using p5.js",
 		link: "https://adityamhatre.github.io/solar-system-colored/",
@@ -221,13 +228,6 @@ export const projects = [
 		youtube: "https://www.youtube.com/watch?v=4lZw1ye6UKI",
 	},
 	{
-		name: "Self-driving car",
-		desc: "A self-driving car that uses genetic algorithm to train itself.",
-		github: "https://github.com/adityamhatre/self-drving-car-genetic",
-		link: "https://medium.com/@aditya.r.mhatre/evolving-self-driving-cars-243b973dc984",
-		youtube: "https://www.youtube.com/watch?v=ASY8dOwJcbk",
-	},
-	{
 		name: "Smart Door Lock",
 		desc: "A smart door lock that can be used to lock and unlock the door.",
 		link: "https://medium.com/@aditya.r.mhatre/diy-smart-doorlock-8f1180074b6d",
@@ -240,7 +240,14 @@ export const projects = [
 		link: "https://medium.com/@aditya.r.mhatre/car-controller-for-games-using-opencv-1ba821d5fe4b",
 		github: "https://github.com/adityamhatre/GameCarControl-CV",
 		youtube: "https://www.youtube.com/watch?v=TXieQvzbTD8",
-	}
+	},
+	{
+		name: "Self-driving car",
+		desc: "A self-driving car that uses genetic algorithm to train itself.",
+		github: "https://github.com/adityamhatre/self-drving-car-genetic",
+		link: "https://medium.com/@aditya.r.mhatre/evolving-self-driving-cars-243b973dc984",
+		youtube: "https://www.youtube.com/watch?v=ASY8dOwJcbk",
+	},
 ];
 
 export const feedbacks = [
