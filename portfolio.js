@@ -200,6 +200,13 @@ export const experience = [
 
 export const projects = [
 	{
+		name: "Wordle Marathi Clone",
+		desc: "A clone of the popular wordle app in Marathi language",
+		link: "https://medium.com/@aditya.r.mhatre/wordle-in-%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80-marathi-82ea2fa1bc03",
+		storeLink: "https://shabdle.in",
+		github: "https://github.com/adityamhatre/shabdle",
+	},
+	{
 		name: "Auto-close tab timer",
 		desc: "Automaticly closes the tab after a certain time",
 		link: "https://medium.com/@aditya.r.mhatre/chrome-tab-auto-close-timer-86aa3ea101c9",
