@@ -200,6 +200,13 @@ export const experience = [
 
 export const projects = [
 	{
+		name: "Sword Fight",
+		desc: "My first try at a game. A two player sword fight.",
+		link: "https://medium.com/@aditya.r.mhatre/sword-fight-ee2b7e06c2f8",
+		storeLink: "https://adityamhatre.com/street-fight",
+		github: "https://github.com/adityamhatre/fighting"
+	},
+	{
 		name: "Wordle Marathi Clone",
 		desc: "A clone of the popular wordle app in Marathi language",
 		link: "https://medium.com/@aditya.r.mhatre/wordle-in-%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80-marathi-82ea2fa1bc03",
