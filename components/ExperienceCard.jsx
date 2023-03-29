@@ -19,7 +19,7 @@ const ExperienceCard = ({ data }) => {
 	const navigateToCompany = () => window.open(data.companyLink, "_blank");
 
 	return (
-		<Col lg="4">
+		<Col lg="6">
 			<Fade left duration={1000} distance="40px">
 				<Card
 					style={{ flex: 1 }}

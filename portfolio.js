@@ -2,7 +2,7 @@ import emoji from "react-easy-emoji";
 
 export const greetings = {
 	name: "Aditya Mhatre",
-	title: "Hi all, I'm Aditya",
+	title: "Hi y'all, I am Aditya",
 	description:
 		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with Java / Spring Boot / JavaScript / ReactJS / Angular / Nodejs / Python / Django and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
 	resumeLink: "/resume.pdf",
@@ -19,7 +19,6 @@ export const contact = {
 export const socialLinks = {
 	facebook: "https://www.facebook.com/aditya.r.mhatre",
 	instagram: "https://www.instagram.com/adityamhatre",
-	twitter: "https://twitter.com/aditya_r_mhatre",
 	github: "https://github.com/adityamhatre",
 	linkedin: "https://www.linkedin.com/in/aditya-mhatre",
 	email: "mailto:aditya.r.mhatre@gmail.com",
@@ -31,24 +30,24 @@ export const skillsSection = {
 	subTitle:
 		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
 	skills: [
-		emoji(
-			"⚡ Develop highly efficient backend applications for any business domain"
-		),
-		emoji(
-			"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-		),
-		emoji(
-			"⚡ Develop cross platform apps using Flutter"
-		),
-		emoji(
-			"⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-		),
+		"⚡ Develop highly efficient backend applications for any business domain",
+		"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+		"⚡ Develop cross platform apps using Flutter",
+		"⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
 	],
 
 	softwareSkills: [
 		{
 			skillName: 'Java',
 			fontAwesomeClassname: 'vscode-icons:file-type-java'
+		},
+		{
+			skillName: 'C-sharp',
+			fontAwesomeClassname: 'vscode-icons:file-type-csharp'
+		},
+		{
+			skillName: 'Dot-Net',
+			fontAwesomeClassname: 'logos:dotnet'
 		},
 		{
 			skillName: "JavaScript",
@@ -161,14 +160,26 @@ export const educationInfo = [
 
 export const experience = [
 	{
+		role: "Software Engineer",
+		company: "Microsoft",
+		companylogo: "/img/microsoft.png",
+		date: "September 2022 – Present",
+		desc: "Working as a software engineer in Microsoft's PVA team, developing and implementing advanced bot management technology to drive exceptional customer experiences and outcomes.",
+		descBullets: [
+			"Collaborate with cross-functional teams to design and develop cutting-edge bot management features and functionalities to improve customer interactions",
+			"Continuously improve the reliability and performance of the bot management platform through testing and optimization, ensuring seamless and personalized customer experiences."
+		],
+		companyLink: "https://www.microsoft.com/"
+	},
+	{
 		role: "Senior Full Stack Engineer",
 		company: "CBRE",
 		companylogo: "/img/cbre.svg",
-		date: "August 2021 – Present",
-		desc: "Currently working as a Senior Full Stack Engineer at CBRE using the latest technologies.",
+		date: "August 2021 – September 2022",
+		desc: "Worked as a Senior Full Stack Engineer at CBRE leveraging the latest technologies as a Senior Full Stack Engineer at CBRE for over a year to develop robust and scalable applications.",
 		descBullets: [
-			"Undertaking the development of a new application for the company.",
-			"Working on a team of 5 developers to migrate a monolith architectured web application to a modern microservice and micro UI architectured application.",
+			"Led development of a new app from scratch, collaborated with stakeholders, designed architecture, and led a team to bring the project to fruition.",
+			"Collaborated with a team of 5 to migrate a large monolithic app to microservices architecture, designed architecture, and developed, tested and deployed services incrementally."
 		],
 		companyLink: "https://www.cbre.com/"
 	},
