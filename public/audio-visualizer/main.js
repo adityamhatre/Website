@@ -17,16 +17,6 @@ class Shape {
     this.x = x;
     this.y = y;
   }
-
-  draw(shapeType, radius = 15) {
-    switch (shapeType.type) {
-      case "point":
-        fill("#ffffffae");
-        stroke("#ffffffae");
-        ellipse(this.x, this.y, radius, radius);
-        break;
-    }
-  }
 }
 
 class Point extends Shape {
@@ -50,13 +40,29 @@ class Oscillator extends Point {
   angle = -1;
   direction = 1;
   frequency = 0.1;
-  p5Oscillator = new p5.Oscillator("triangle");
+  p5Oscillator = new p5.Oscillator("sine");
+  opacity = 0;
 
   play() {
     this.p5Oscillator.freq(this.noteFrequency);
     this.p5Oscillator.amp(0.5, 0.05);
     this.p5Oscillator.start();
     setTimeout(() => this.p5Oscillator.amp(0, 0.05), 10);
+  }
+
+  draw() {
+    if (this.angle < 90) {
+      this.opacity = map(this.angle, 1, 90, 0, 1);
+    }
+    if (this.angle > 90) {
+      this.opacity = map(this.angle, 90, 180, 1, 0);
+    }
+    if(this.angle <= 2 || this.angle >= 178) {
+      this.opacity = 1;
+    }
+    fill(`rgba(255, 255, 255, ${this.opacity})`);
+    stroke("#ffffffae");
+    ellipse(this.x, this.y, 15, 15);
   }
 }
 
@@ -77,14 +83,16 @@ function setup() {
         origin.x - radius * Math.cos(0),
         origin.y - radius * Math.sin(0),
         radius,
-        (oscillatorCount - i / 2) / pathSpacing,
+        (oscillatorCount - i / 2) / 45,
         pentatonic(oscillatorCount - i)
       )
     );
   }
 
-  button = createButton("Start Your Drawing");
+  button = createButton("Click here to begin");
+  button.size(windowWidth, 100);
   button.mousePressed(() => (start = true));
+  setFrameRate(120);
 }
 
 function draw() {
@@ -94,7 +102,7 @@ function draw() {
   if (!start) {
     return;
   }
-  
+
   drawPaths();
   drawOscillators();
   drawFps();
@@ -113,13 +121,13 @@ function drawPaths() {
   for (let i = 0; i < oscillators.length; i++) {
     const osc = oscillators[i];
     const hue = map(i, 0, oscillators.length, 300, 0);
-    
+
     noFill();
     stroke(hue, 100, 100);
     strokeWeight(2);
     ellipse(origin.x, origin.y, 2 * osc.r, 2 * osc.r);
   }
-  
+
   colorMode(RGB);
 }
 
@@ -138,7 +146,7 @@ function drawOscillators() {
       oscillator.direction = 1;
       oscillator.play();
     }
-    
+
     oscillator.angle += 2 * oscillator.direction * oscillator.frequency;
   });
 
