@@ -12,7 +12,7 @@ import {
 
 import Color from "color-thief-react";
 
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const ExperienceCard = ({ data }) => {
@@ -20,9 +20,12 @@ const ExperienceCard = ({ data }) => {
 
 	return (
 		<Col lg="6">
-			<Fade left duration={1000} distance="40px">
+			<motion.div
+				initial={{ opacity: 0, y: 100 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5 }}>
 				<Card
-					style={{ flex: 1 }}
+					style={{ flex: 1, marginBottom: "1rem" }}
 					className="shadow-lg--hover shadow border-0 text-center rounded"
 				>
 					<Color src={data.companylogo} format="hex">
@@ -41,8 +44,8 @@ const ExperienceCard = ({ data }) => {
 								onClick={navigateToCompany}
 								unoptimized={true}
 								src={data.companylogo}
-								width={"100px"}
-								height={"100px"}
+								width={100}
+								height={100}
 								className="image-75 pointer"
 								alt={data.companylogo}
 							/>
@@ -61,7 +64,7 @@ const ExperienceCard = ({ data }) => {
 						</CardText>
 					</CardBody>
 				</Card>
-			</Fade>
+			</motion.div>
 		</Col>
 	);
 };

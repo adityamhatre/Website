@@ -3,13 +3,25 @@ import React from "react";
 import { projects } from "../portfolio";
 import { Container, Row } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const Projects = () => {
+	const [client, setClient] = useState(false);
+	useEffect(() => {
+		setClient(true);
+	}, []);
+	if (!client) {
+		return null;
+	}
+
 	return (
 		<section className="section section-lg padding-top-0">
 			<Container>
-				<Fade bottom duration={1000} distance="40px">
+				<motion.div
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}>
 					<div className="d-flex p-4">
 						<div>
 							<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
@@ -25,7 +37,7 @@ const Projects = () => {
 							return <ProjectsCard key={i} data={data} />;
 						})}
 					</Row>
-				</Fade>
+				</motion.div>
 			</Container>
 		</section>
 	);

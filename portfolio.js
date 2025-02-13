@@ -1,5 +1,3 @@
-import emoji from "react-easy-emoji";
-
 export const greetings = {
 	name: "Aditya Mhatre",
 	title: "Hi y'all, I am Aditya",

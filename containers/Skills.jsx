@@ -1,14 +1,26 @@
 import React, { Fragment } from "react";
 
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import DisplayLottie from "../components/DisplayLottie";
 import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 import { skillsSection } from "../portfolio";
-
+import { useState, useEffect } from "react";
 const Skills = () => {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
+	if (!isClient) {
+		return null;
+	}
 	return (
-		<Fade bottom duration={1000} distance="40px">
+		<motion.div
+			initial={{ opacity: 0, y: 100 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5 }}>
 			<Container className="text-center my-5 section section-lg">
 				<h1 className="h1">{skillsSection.title}</h1>
 				<p className="lead">{skillsSection.subTitle}</p>
@@ -52,7 +64,7 @@ const Skills = () => {
 					</Col>
 				</Row>
 			</Container>
-		</Fade>
+		</motion.div>
 	);
 };
 

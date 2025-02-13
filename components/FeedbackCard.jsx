@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardBody, Badge } from "reactstrap";
 
-import { Fade } from "react-reveal";
 
 const FeedbackCard = ({ data }) => {
 	return (
