@@ -1,11 +1,13 @@
 import React from "react";
 import { Card, CardBody, Badge } from "reactstrap";
-
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 
 const EducationCard = ({ education }) => {
 	return (
-		<Fade left duration={1000} distance="40px">
+		<motion.div
+			initial={{ opacity: 0, y: 100 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5 }}>
 			<Card className="card-lift--hover shadow mt-4">
 				<CardBody>
 					<div className="d-flex px-3">
@@ -21,15 +23,15 @@ const EducationCard = ({ education }) => {
 							<ul>
 								{education.descBullets
 									? education.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
-									  })
+										return <li key={desc}>{desc}</li>;
+									})
 									: null}
 							</ul>
 						</div>
 					</div>
 				</CardBody>
 			</Card>
-		</Fade>
+		</motion.div>
 	);
 };
 

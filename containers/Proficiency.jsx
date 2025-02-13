@@ -1,15 +1,25 @@
 import React from "react";
 import { SkillBars } from "../portfolio";
 import { Container, Row, Progress, Col } from "reactstrap";
-
-import { Fade } from "react-reveal";
-
+import { motion } from "framer-motion";
 import GreetingLottie from "../components/DisplayLottie";
+import { useState, useEffect } from "react";
 
 const Proficiency = () => {
+	const [client, setClient] = useState(false);
+	useEffect(() => {
+		setClient(true);
+	}, []);
+	if (!client) {
+		return null;
+	}
+
 	return (
 		<Container className="section section-lg">
-			<Fade bottom duration={1000} distance="40px">
+			<motion.div
+				initial={{ opacity: 0, y: 100 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5 }}>
 				<Row>
 					<Col lg="6">
 						<h1 className="h1">Proficiency</h1>
@@ -40,7 +50,7 @@ const Proficiency = () => {
 						<GreetingLottie animationPath="/lottie/build.json" />
 					</Col>
 				</Row>
-			</Fade>
+			</motion.div>
 		</Container>
 	);
 };
