@@ -1,15 +1,20 @@
-const withPWA = require('next-pwa')({
-  dest: 'public'
-})
+// next.config.js
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+});
 
 module.exports = withPWA({
-	pwa: {
-		dest: "public",
-		register: true,
-		skipWaiting: true,
-	},
-	reactStrictMode: false,
-	images: {
-		domains: ["avatars.githubusercontent.com", "www.zimperium.com", "www.cbre.com"],
-	}
+  output: "export", // ✅ Next 15 static export
+  trailingSlash: true, // ✅ makes /valentine-app/ map nicely
+  images: {
+    unoptimized: true, // ✅ required for static export if using next/image
+    domains: [
+      "avatars.githubusercontent.com",
+      "www.zimperium.com",
+      "www.cbre.com",
+    ],
+  },
+  reactStrictMode: false,
 });

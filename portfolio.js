@@ -272,16 +272,3 @@ export const projects = [
 		youtube: "https://www.youtube.com/watch?v=ASY8dOwJcbk",
 	},
 ];
-
-export const feedbacks = [
-	/*{
-		name: "Hassan Mehmood",
-		feedback:
-			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Aditya Mhatre has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose Aditya web developer services for u.",
-	},
-	{
-		name: "Maheen Altaf",
-		feedback:
-			"the website is very nice, everything was perfectly made as i need. it just loads in moments, without giving u the chance to wait. the quality is also very amazing. i am using it without any problem. great job",
-	},*/
-];
