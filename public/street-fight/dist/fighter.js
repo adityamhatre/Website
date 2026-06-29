@@ -10,6 +10,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import { Constants } from "./constants.js";
 import { Sounds } from "./Sounds.js";
 export class Fighter {
+    set takingHit(v) {
+        this.isTakingHit = v;
+        if (!v)
+            return;
+        setTimeout(() => {
+            this.currentFrame = 0;
+            this.framesElapsed = 1;
+            this.isTakingHit = false;
+        }, 200);
+    }
     constructor(props) {
         this.lastKey = "";
         this.gravity = 1;
@@ -48,16 +58,6 @@ export class Fighter {
             this.height = this.props.scale * this.image.height;
             this.width = (this.props.scale * this.image.width) / this.props.frames;
         };
-    }
-    set takingHit(v) {
-        this.isTakingHit = v;
-        if (!v)
-            return;
-        setTimeout(() => {
-            this.currentFrame = 0;
-            this.framesElapsed = 1;
-            this.isTakingHit = false;
-        }, 200);
     }
     drawAttackBox() {
         if (!this.props.debug)
@@ -130,7 +130,7 @@ export class Fighter {
             this.currentFrame =
                 Constants.actionFrameCount[this.props.type]["death"] - 1;
         }
-        this.image.src = `src/assets/images/${this.props.type}-${this.direction}/${this.action}.png`;
+        this.image.src = `/street-fight/src/assets/images/${this.props.type}-${this.direction}/${this.action}.png`;
         this.computeBoxesPosition();
         this.drawBody();
         this.drawAttackBox();

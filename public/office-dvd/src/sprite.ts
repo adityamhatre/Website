@@ -24,7 +24,7 @@ export class Sprite {
     this.x = props.x;
     this.y = props.y;
     this.color = `rgb(${this.r}, ${this.g}, ${this.b})`;
-    this.logo.src = "src/assets/images/logo.svg";
+    this.logo.src = "/office-dvd/src/assets/images/logo.svg";
   }
 
   public draw() {

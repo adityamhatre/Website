@@ -1,8 +1,8 @@
 export class Sounds {
   private static audioMap: { [k: string]: HTMLAudioElement } = {
-    gotHit: new Audio("src/assets/sounds/gotHit.ogg"),
-    bg: new Audio("src/assets/sounds/bg.mp3"),
-    attack: new Audio("src/assets/sounds/attack.mp3"),
+    gotHit: new Audio("/street-fight/src/assets/sounds/gotHit.ogg"),
+    bg: new Audio("/street-fight/src/assets/sounds/bg.mp3"),
+    attack: new Audio("/street-fight/src/assets/sounds/attack.mp3"),
   };
 
   private static isBgPlaying = false;

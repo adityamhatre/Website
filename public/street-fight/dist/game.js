@@ -18,14 +18,14 @@ export class Game {
         this.bg = new Sprite({
             position: { x: 0, y: 0 },
             size: { x: Constants.width, y: Constants.height },
-            imgSrc: "src/assets/images/background.png",
+            imgSrc: "/street-fight/src/assets/images/background.png",
             scale: 1,
             frames: 1,
         });
         this.shop = new Sprite({
             position: { x: Constants.width - 425, y: Constants.height - 430 },
             size: { x: 100, y: 100 },
-            imgSrc: "src/assets/images/shop.png",
+            imgSrc: "/street-fight/src/assets/images/shop.png",
             scale: 2.5,
             frames: 6,
         });
@@ -37,7 +37,7 @@ export class Game {
             position: { x: 50, y: 100 },
             velocity: { x: 0, y: 0 },
             size: { x: 50, y: 150 },
-            imgSrc: "src/assets/images/player-right/idle.png",
+            imgSrc: "/street-fight/src/assets/images/player-right/idle.png",
             frames: 8,
             scale: 2.25,
             direction: "right",
@@ -52,7 +52,7 @@ export class Game {
             position: { x: 500, y: 100 },
             velocity: { x: 0, y: 0 },
             size: { x: 50, y: 150 },
-            imgSrc: "src/assets/images/enemy-left/idle.png",
+            imgSrc: "/street-fight/src/assets/images/enemy-left/idle.png",
             scale: 2.25,
             frames: 4,
             direction: "left",

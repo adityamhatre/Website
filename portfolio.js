@@ -161,6 +161,7 @@ export const experience = [
 		role: "Software Engineer",
 		company: "Microsoft",
 		companylogo: "/img/microsoft.png",
+		brandColor: "#0078d4",
 		date: "September 2022 – Present",
 		desc: "Working as a software engineer in Microsoft's PVA team, developing and implementing advanced bot management technology to drive exceptional customer experiences and outcomes.",
 		descBullets: [
@@ -173,6 +174,7 @@ export const experience = [
 		role: "Senior Full Stack Engineer",
 		company: "CBRE",
 		companylogo: "/img/cbre.svg",
+		brandColor: "#006a4e",
 		date: "August 2021 – September 2022",
 		desc: "Worked as a Senior Full Stack Engineer at CBRE leveraging the latest technologies as a Senior Full Stack Engineer at CBRE for over a year to develop robust and scalable applications.",
 		descBullets: [
@@ -185,6 +187,7 @@ export const experience = [
 		role: "Senior Software Engineer",
 		company: "Zimperium",
 		companylogo: "/img/zimperium.png",
+		brandColor: "#1c1c1c",
 		date: "June 2018 – August 2021",
 		desc: "First job out of university. Started as junior developer and worked my way to senior engineer.",
 		descBullets: [
@@ -197,6 +200,7 @@ export const experience = [
 		role: "Web Developer",
 		company: "The University of Texas",
 		companylogo: "/img/uta.png",
+		brandColor: "#002868",
 		date: "June 2017 - May 2018",
 		desc: "Provisioned workflow for students to upload research papers for a lab journal online system",
 		descBullets: [
@@ -233,6 +237,7 @@ export const projects = [
 		name: "Solar System",
 		desc: "A solar system artistic animation using p5.js",
 		link: "https://adityamhatre.github.io/solar-system-colored/",
+		storeLink: "https://adityamhatre.com/solar-system",
 		github: "https://github.com/adityamhatre/solar-system-colored",
 		youtube: "https://www.youtube.com/watch?v=Jqbyhhj9x3I",
 	},

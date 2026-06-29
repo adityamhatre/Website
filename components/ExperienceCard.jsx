@@ -10,8 +10,6 @@ import {
 	Col,
 } from "reactstrap";
 
-import Color from "color-thief-react";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -28,13 +26,9 @@ const ExperienceCard = ({ data }) => {
 					style={{ flex: 1, marginBottom: "1rem" }}
 					className="shadow-lg--hover shadow border-0 text-center rounded"
 				>
-					<Color src={data.companylogo} format="hex">
-						{(color) => (
-							<CardHeader style={{ background: color.data }}>
-								<h5 onClick={navigateToCompany} className="text-white pointer" >{data.company}</h5>
-							</CardHeader>
-						)}
-					</Color>
+					<CardHeader style={{ background: data.brandColor || "#172b4d" }}>
+						<h5 onClick={navigateToCompany} className="text-white pointer" >{data.company}</h5>
+					</CardHeader>
 					<CardBody className="py-5">
 						<div
 							className="bg-white rounded-circle mb-3 img-center img-fluid shadow-lg "

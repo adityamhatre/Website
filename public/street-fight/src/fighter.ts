@@ -188,7 +188,7 @@ export class Fighter {
         Constants.actionFrameCount[this.props.type]["death"] - 1;
     }
 
-    this.image.src = `src/assets/images/${this.props.type}-${this.direction}/${this.action}.png`;
+    this.image.src = `/street-fight/src/assets/images/${this.props.type}-${this.direction}/${this.action}.png`;
 
     this.computeBoxesPosition();
     this.drawBody();
