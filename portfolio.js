@@ -158,12 +158,12 @@ export const educationInfo = [
 
 export const experience = [
 	{
-		role: "Software Engineer",
+		role: "Senior Software Engineer",
 		company: "Microsoft",
 		companylogo: "/img/microsoft.png",
 		brandColor: "#0078d4",
 		date: "September 2022 – Present",
-		desc: "Working as a software engineer in Microsoft's PVA team, developing and implementing advanced bot management technology to drive exceptional customer experiences and outcomes.",
+		desc: "Working as a Senior Software Engineer in Microsoft's PVA team, developing and implementing advanced bot management technology to drive exceptional customer experiences and outcomes.",
 		descBullets: [
 			"Collaborate with cross-functional teams to design and develop cutting-edge bot management features and functionalities to improve customer interactions",
 			"Continuously improve the reliability and performance of the bot management platform through testing and optimization, ensuring seamless and personalized customer experiences."
