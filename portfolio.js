@@ -270,10 +270,10 @@ export const projects = [
 		youtube: "https://www.youtube.com/watch?v=TXieQvzbTD8",
 	},
 	{
-		name: "Self-driving car",
-		desc: "A self-driving car that uses genetic algorithm to train itself.",
-		github: "https://github.com/adityamhatre/self-drving-car-genetic",
+		name: "Self Driving Car Simulation",
+		desc: "Self-driving car simulation running neural networks, using genetic algorithm to optimize behavior. Written in pure javascript.",
 		link: "https://medium.com/@aditya.r.mhatre/evolving-self-driving-cars-243b973dc984",
-		youtube: "https://www.youtube.com/watch?v=ASY8dOwJcbk",
+		storeLink: "https://cutt.ly/self-driving-cars",
+		github: "https://github.com/adityamhatre/self-driving-car",
 	},
 ];
