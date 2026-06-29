@@ -70,14 +70,14 @@ html.dark-theme .border {
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
-html.dark-theme .navbar-main {
-  background-color: #0b1319 !important;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
-}
-
-html.dark-theme .navbar-transparent {
+html.dark-theme .navbar-main.navbar-transparent.headroom--top {
   background-color: transparent !important;
   box-shadow: none !important;
+}
+
+html.dark-theme .navbar-main.headroom--not-top {
+  background-color: #0b1319 !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
 }
 
 html.dark-theme .footer {
