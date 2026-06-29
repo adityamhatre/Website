@@ -69,12 +69,22 @@ const Navigation = () => {
 					expand="lg"
 					id="navbar-main"
 				>
-					<Container>
+					<Container className="d-flex align-items-center justify-content-between">
 						<NavbarBrand href="/" className="mr-lg-5">
 							<h2 className="text-white" id="nav-title">
 								{greetings.name}
 							</h2>
 						</NavbarBrand>
+						<div className="d-flex align-items-center ml-auto mr-4">
+							<button
+								onClick={toggleTheme}
+								className="nav-link nav-link-icon btn btn-link p-0 border-0"
+								style={{ cursor: "pointer", background: "none", outline: "none", display: "flex", alignItems: "center" }}
+								aria-label="Toggle Theme"
+							>
+								<i className={theme === "dark" ? "fa fa-sun-o" : "fa fa-moon-o"} style={{ fontSize: "1.25rem" }} />
+							</button>
+						</div>
 						<button
 							className="navbar-toggler"
 							aria-label="navbar_toggle"
@@ -194,20 +204,6 @@ const Navigation = () => {
 										</NavLink>
 									</NavItem>
 								)}
-								<NavItem>
-									<NavLink
-										rel="noopener"
-										aria-label="Toggle Theme"
-										className="nav-link-icon"
-										style={{ cursor: "pointer" }}
-										onClick={toggleTheme}
-									>
-										<i className={theme === "dark" ? "fa fa-sun" : "fa fa-moon-o"} />
-										<span className="nav-link-inner--text d-lg-none ml-2">
-											{theme === "dark" ? "Light Mode" : "Dark Mode"}
-										</span>
-									</NavLink>
-								</NavItem>
 							</Nav>
 						</UncontrolledCollapse>
 					</Container>
