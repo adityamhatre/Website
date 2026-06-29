@@ -4,6 +4,15 @@ const withPWA = require("next-pwa")({
   register: true,
   skipWaiting: true,
   buildExcludes: [/dynamic-css-manifest\.json$/],
+  publicExcludes: [
+    "!street-fight/**/*",
+    "!office-dvd/**/*",
+    "!solar-system/**/*",
+    "!audio-visualizer/**/*",
+    "!pb/**/*",
+    "!qr/**/*",
+    "!valentine-app/**/*",
+  ],
 });
 
 module.exports = withPWA({
@@ -11,11 +20,6 @@ module.exports = withPWA({
   trailingSlash: true, // ✅ makes /valentine-app/ map nicely
   images: {
     unoptimized: true, // ✅ required for static export if using next/image
-    domains: [
-      "avatars.githubusercontent.com",
-      "www.zimperium.com",
-      "www.cbre.com",
-    ],
   },
   reactStrictMode: false,
 });
