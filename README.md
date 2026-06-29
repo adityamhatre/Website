@@ -1,4 +1,4 @@
-# 🚀 Aditya Mhatre | Developer Portfolio
+# Aditya Mhatre | Developer Portfolio
 
 Welcome to the repository for Aditya Mhatre's developer portfolio and interactive playground. The application is built with **Next.js 15**, **React 19**, **Bootstrap 5 & Reactstrap (using the Argon Design System)**, and is deployed via **Firebase Hosting**.
 
@@ -7,7 +7,7 @@ Welcome to the repository for Aditya Mhatre's developer portfolio and interactiv
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 /
@@ -33,7 +33,7 @@ Welcome to the repository for Aditya Mhatre's developer portfolio and interactiv
 
 ---
 
-## 🛠️ Development Workflows & Commands
+## Development Workflows & Commands
 
 Run all command scripts from the project root using `npm`:
 
@@ -83,7 +83,7 @@ firebase deploy
 
 ---
 
-## ⚙️ Key Architectural Design Patterns
+## Key Architectural Design Patterns
 
 *   **Single Source of Truth (`portfolio.js`):** All social URLs, job histories, projects, education details, and brand colors are centralized. Avoid hardcoding copies inside React component files.
 *   **Sub-App Trailing Slash Rules:** Next.js static exports rewrite directories with trailing slashes. All scripts and assets inside `/public/` sub-apps use absolute paths (e.g. `/street-fight/dist/index.js` or `/lib/p5.js`) to resolve correctly with or without trailing slash page requests.

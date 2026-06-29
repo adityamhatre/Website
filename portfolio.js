@@ -28,10 +28,10 @@ export const skillsSection = {
 	subTitle:
 		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
 	skills: [
-		"⚡ Develop highly efficient backend applications for any business domain",
-		"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-		"⚡ Develop cross platform apps using Flutter",
-		"⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+		"Develop highly efficient backend applications for any business domain",
+		"Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+		"Develop cross platform apps using Flutter",
+		"Integration of third party services such as Firebase/ AWS / Digital Ocean",
 	],
 
 	softwareSkills: [
