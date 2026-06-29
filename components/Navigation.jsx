@@ -18,6 +18,7 @@ import {
 
 const Navigation = () => {
 	const [collapseClasses, setCollapseClasses] = useState("");
+	const [theme, setTheme] = useState("light");
 	const onExiting = () => setCollapseClasses("collapsing-out");
 
 	const onExited = () => setCollapseClasses("");
@@ -26,7 +27,39 @@ const Navigation = () => {
 		let headroom = new Headroom(document.getElementById("navbar-main"));
 		// initialise
 		headroom.init();
-	});
+
+		// Detect the initial theme applied by the document head script
+		const isDarkTheme = document.documentElement.classList.contains("dark-theme");
+		setTheme(isDarkTheme ? "dark" : "light");
+
+		// Handle updates if system settings change, only if user hasn't overridden
+		const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+		const handleChange = (e) => {
+			if (!localStorage.getItem("theme")) {
+				const systemTheme = e.matches ? "dark" : "light";
+				if (systemTheme === "dark") {
+					document.documentElement.classList.add("dark-theme");
+				} else {
+					document.documentElement.classList.remove("dark-theme");
+				}
+				setTheme(systemTheme);
+			}
+		};
+		mediaQuery.addEventListener("change", handleChange);
+		return () => mediaQuery.removeEventListener("change", handleChange);
+	}, []);
+
+	const toggleTheme = () => {
+		const nextTheme = theme === "dark" ? "light" : "dark";
+		if (nextTheme === "dark") {
+			document.documentElement.classList.add("dark-theme");
+			localStorage.setItem("theme", "dark");
+		} else {
+			document.documentElement.classList.remove("dark-theme");
+			localStorage.setItem("theme", "light");
+		}
+		setTheme(nextTheme);
+	};
 
 	return (
 		<>
@@ -161,6 +194,20 @@ const Navigation = () => {
 										</NavLink>
 									</NavItem>
 								)}
+								<NavItem>
+									<NavLink
+										rel="noopener"
+										aria-label="Toggle Theme"
+										className="nav-link-icon"
+										style={{ cursor: "pointer" }}
+										onClick={toggleTheme}
+									>
+										<i className={theme === "dark" ? "fa fa-sun" : "fa fa-moon-o"} />
+										<span className="nav-link-inner--text d-lg-none ml-2">
+											{theme === "dark" ? "Light Mode" : "Dark Mode"}
+										</span>
+									</NavLink>
+								</NavItem>
 							</Nav>
 						</UncontrolledCollapse>
 					</Container>

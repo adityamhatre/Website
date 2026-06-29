@@ -10,6 +10,18 @@ class MyDocument extends Document {
                     <meta name="theme-color" content="#fff" />
                 </Head>
                 <body>
+                    <script dangerouslySetInnerHTML={{ __html: `
+                        (function() {
+                            var savedTheme = localStorage.getItem('theme');
+                            var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                            var theme = savedTheme || systemTheme;
+                            if (theme === 'dark') {
+                                document.documentElement.classList.add('dark-theme');
+                            } else {
+                                document.documentElement.classList.remove('dark-theme');
+                            }
+                        })();
+                    ` }} />
                     <Main />
                     <NextScript />
                 </body>

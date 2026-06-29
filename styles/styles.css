@@ -9,3 +9,147 @@ body > div:first-child {
 .padding-top-0 {
   padding-top: 0;
 }
+
+/* ==========================================================================
+   Dark Theme Overrides
+   ========================================================================== */
+
+html.dark-theme,
+html.dark-theme body {
+  background-color: #0b1319 !important;
+  color: #eceff1;
+}
+
+html.dark-theme .card {
+  background-color: #111c24 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #eceff1 !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+html.dark-theme .card h3,
+html.dark-theme .card h4,
+html.dark-theme .card h5,
+html.dark-theme .card p,
+html.dark-theme .card span {
+  color: #eceff1 !important;
+}
+
+html.dark-theme .text-default,
+html.dark-theme .text-dark,
+html.dark-theme .text-lead,
+html.dark-theme .display-3,
+html.dark-theme .display-4,
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6 {
+  color: #f8f9fa !important;
+}
+
+html.dark-theme .description,
+html.dark-theme .text-muted {
+  color: #b0bec5 !important;
+}
+
+html.dark-theme .lead {
+  color: #cfd8dc !important;
+}
+
+html.dark-theme .bg-white {
+  background-color: #111c24 !important;
+}
+
+html.dark-theme .bg-secondary {
+  background-color: #17242f !important;
+}
+
+html.dark-theme .border {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark-theme .navbar-main {
+  background-color: #0b1319 !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
+
+html.dark-theme .navbar-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html.dark-theme .footer {
+  background-color: #0b1319 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+html.dark-theme .nav-link-icon,
+html.dark-theme .nav-link-inner--text {
+  color: #f8f9fa !important;
+}
+
+html.dark-theme .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+html.dark-theme .collapse-brand h3 {
+  color: #111c24 !important;
+}
+
+html.dark-theme .badge-primary {
+  background-color: rgba(94, 114, 228, 0.15) !important;
+  color: #8996e6 !important;
+}
+
+html.dark-theme .badge-info {
+  background-color: rgba(17, 205, 239, 0.15) !important;
+  color: #3ad3f3 !important;
+}
+
+html.dark-theme .badge-success {
+  background-color: rgba(45, 206, 137, 0.15) !important;
+  color: #2dce89 !important;
+}
+
+html.dark-theme .badge-warning {
+  background-color: rgba(251, 99, 64, 0.15) !important;
+  color: #fb6340 !important;
+}
+
+html.dark-theme .education-card,
+html.dark-theme .experience-card {
+  border-left: 3px solid #5e72e4 !important;
+}
+
+/* Ensure background of sections are clean */
+html.dark-theme .section-lg,
+html.dark-theme .section-md {
+  background-color: #0b1319 !important;
+}
+
+/* Gradients on header and footer can remain vibrant */
+html.dark-theme .bg-gradient-info {
+  background: linear-gradient(87deg, #112233 0, #182e44 100%) !important;
+}
+
+html.dark-theme .shadow-lg--hover:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4), 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-theme .form-control,
+html.dark-theme input {
+  background-color: #17242f !important;
+  color: #eceff1 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html.dark-theme .form-control:focus,
+html.dark-theme input:focus {
+  background-color: #1c2c3a !important;
+  color: #f8f9fa !important;
+  border-color: #5e72e4 !important;
+}
+
