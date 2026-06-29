@@ -44,7 +44,7 @@ function SEO({ data }) {
 	);
 }
 
-SEO.prototype = {
+SEO.propTypes = {
 	data: PropTypes.shape({
 		title: PropTypes.string.isRequired,
 		description: PropTypes.string,

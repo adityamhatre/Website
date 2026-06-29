@@ -66,7 +66,7 @@ export default function Home({ githubProfileData }) {
 	);
 }
 
-Home.prototype = {
+Home.propTypes = {
 	githubProfileData: PropTypes.object.isRequired,
 };
 
