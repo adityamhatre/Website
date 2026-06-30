@@ -16,8 +16,7 @@ Welcome to the repository for Aditya Mhatre's developer portfolio and interactiv
 ├── pages/               # Page routing entry points
 │   ├── _app.js          # Global stylesheet imports and bootstrap configurations
 │   ├── _document.js     # Custom HTML document wrapper (PWA metadata, favicons, fonts)
-│   ├── index.js         # Main home page route
-│   └── faith-dating.js  # Dedicated FaithDating responsive mockup page
+│   └── index.js         # Main home page route
 ├── public/              # Static assets and standalone sub-applications
 │   ├── audio-visualizer/# Embedded interactive audio oscillator visualizer
 │   ├── office-dvd/      # Bouncing DVD logo TS canvas simulation
